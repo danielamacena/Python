@@ -15,6 +15,7 @@ Before:
 
 
 After:
+![](images/Religions2.png)
 
 
 
