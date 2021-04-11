@@ -27,6 +27,22 @@ After melting, the column variable names often becomes a combination of multiple
 variable names.
 
 
+Before:
+
+![](images/Ebola1.png)
+
+
+
+After:
+
+![](images/Ebola2.png)
+
+
+
+
+
+
+
 • Variables are stored in both rows and columns.
 The most complicated form of messy data occurs when variables are stored in both rows and
 columns.
