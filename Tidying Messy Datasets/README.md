@@ -10,11 +10,14 @@ A common type of messy dataset is tabular data designed for presentation, where 
 form both the rows and columns, and column headers are values, not variable names.
 
 Before:
+
 ![](images/Religions1.png)
 
 
 
 After:
+
+![](images/Religions2.png)
 
 
 
