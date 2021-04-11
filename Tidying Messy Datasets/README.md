@@ -9,6 +9,14 @@ with messy datasets and how to fix them:
 A common type of messy dataset is tabular data designed for presentation, where variables
 form both the rows and columns, and column headers are values, not variable names.
 
+Before:
+![](images/Religions1.png)
+
+
+
+After:
+
+
 
 
 • Multiple variables are stored in one column.
