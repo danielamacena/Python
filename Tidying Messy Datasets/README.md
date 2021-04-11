@@ -1,39 +1,46 @@
-# SciPy 2017 Pandas Tutorial
+# Tidying Messy Datasets Tutorial
 
-Thanks for attending the [tutorial](https://youtu.be/oGzU688xCUs).
-If you would be so kind to help me be better, please fill out the [feedback](https://docs.google.com/forms/u/0/d/e/1FAIpQLSf_hJ4akzTKIOEirxQAOE98ByD2zauXAW-ArNXX8ClNrNj9nQ/viewform?usp=sf_link) form
+Real datasets may violate the three precepts of tidy data in almost every way
+imaginable. While occasionally you do get a dataset that you can start analysing immediately,
+this is the exception, not the rule. This tutorial describes the most common problems
+with messy datasets and how to fix them:
+
+• Column headers are values, not variable names.
+A common type of messy dataset is tabular data designed for presentation, where variables
+form both the rows and columns, and column headers are values, not variable names.
+
+
+
+• Multiple variables are stored in one column.
+After melting, the column variable names often becomes a combination of multiple underlying
+variable names.
+
+
+• Variables are stored in both rows and columns.
+The most complicated form of messy data occurs when variables are stored in both rows and
+columns.
+
+• Multiple types of observational units are stored in the same table.
+Datasets often involve values collected at multiple levels, on different types of observational
+units. During tidying, each type of observational unit should be stored in its own table. This
+is closely related to the idea of database normalisation, where each fact is expressed in only
+one place. If this is not done, it's possible for inconsistencies to occur.
+
+
+• A single observational unit is stored in multiple tables.
+It's also common to find data values about a single type of observational unit spread out over
+multiple tables or files.
+
+
 
 # Installation
 
 1. Install anaconda (use the Python 3 version): https://www.continuum.io/downloads
 2. See the Software-Carpentry Installations for `bash`, `git`, `python`, and `text editor`:   https://swcarpentry.github.io/workshop-template/#setup
 
-# Testing your installation
 
-1. Run the `test_installation.py` script (or copy/paste the import statments into a python interpreter)
+# Reference : 
 
-## How to run the Jupyter Notebook
+Journal of Statistical Software
+https://vita.had.co.nz/papers/tidy-data.pdf
 
-#### Windows/Mac
-
-There will be an [Anaconda Navigator](https://docs.continuum.io/anaconda/navigator/) application that installs to your system.
-You can launch the Jupyter notebook from there to run your python code.
-
-#### Linux
-
-Anaconda's Python installation should be your system's default python.
-Make sure you open a new terminal window for this to take effect.
-You can launch python by typing `jupyter notebook`
-
-## Creating a Notebook
-
-Once you have the Jupyter notebook launched, there's a button towards the top right called `new`.
-Click this and select `Python 3`.
-
-# Get Data
-
-1. Download or Clone the this repository.
-    - Press the green button towards the top right
-    - click download zip
-    - extract
-    - celebrate
